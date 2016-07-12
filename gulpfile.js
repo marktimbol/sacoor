@@ -15,12 +15,16 @@ elixir(function(mix) {
     mix.sass('app.scss', 'resources/assets/css/app.css')
     	.styles([
     		bowersPath + '/bootstrap/dist/css/bootstrap.css',
+            'filter.css',
     		'app.css'
     	], 'public/css/app.css')
 
     	.scripts([
-    		bowersPath + '/jquery/dist/jquery.js',
+    		'modernizr.js',
+            bowersPath + '/jquery/dist/jquery.js',
     		bowersPath + '/bootstrap/dist/js/bootstrap.js',
+            'jquery.mixitup.min.js',
+            'filter.js',
     	], 'public/js/app.js')
 
     	.copy('bower_components/bootstrap/dist/fonts', 'public/build/fonts')
