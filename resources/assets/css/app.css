@@ -1,0 +1,69 @@
+body {
+  font-family: Arial;
+  font-size: 14px; }
+
+header {
+  width: 100%;
+  height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  background: rgba(57, 68, 75, 0.85); }
+  header .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  header .logo {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase; }
+    header .logo span {
+      color: #4bcaff; }
+  header nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin: 0; }
+    header nav ul li a {
+      color: white;
+      padding: 5px 10px;
+      text-transform: uppercase; }
+      header nav ul li a:hover {
+        color: #4bcaff;
+        font-size: 14px;
+        text-decoration: none;
+        outline: 1px solid #4bcaff; }
+
+.Slides .Slide__quote {
+  margin: 0;
+  color: white;
+  font-size: 42px;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(57, 68, 75, 0.85); }
+
+.Slides__slide {
+  height: 800px;
+  background: url("/images/slide.jpg") no-repeat;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=app.css.map */

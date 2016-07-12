@@ -1,2 +1,78 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$skyBlue: #4bcaff;
 
+body {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+header {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background: rgba(57,68,75,.85);
+	.row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		margin: 0;
+		color: white;
+		font-size: 30px;
+		font-weight: normal;
+		text-transform: uppercase;
+		span {
+			color: $skyBlue;
+		}
+	}
+
+	nav {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+			li {
+				a {
+					color: white;
+					padding: 5px 10px;
+					text-transform: uppercase;
+					&:hover {
+						color: $skyBlue;
+						font-size: 14px;
+						// padding: 5px 10px;
+						text-decoration: none;
+						outline: 1px solid $skyBlue;
+					}
+				}
+			}
+		}
+	}
+}
+
+.Slides {
+	.Slide__quote {
+		margin: 0;
+		color: white;
+		font-size: 42px;
+		font-weight: normal;
+		padding: 5px 10px;
+		text-align: center;
+		text-transform: uppercase;
+		background: rgba(57,68,75,.85);
+	}
+}
+
+.Slides__slide {
+	height: 800px;
+	background: url('/images/slide.jpg') no-repeat;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
