@@ -6878,8 +6878,8 @@ xtab-filter
 .cd-tab-filter {
   /* tabbed navigation style on mobile - dropdown */
   position: relative;
-  height: 50px;
-  width: 140px;
+  /*height: 50px;*/
+  /*width: 140px;*/
   margin: 0 auto;
   z-index: 1;
 }
@@ -6898,7 +6898,7 @@ xtab-filter
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  background: url("/images/cd-icon-arrow.svg") no-repeat center center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -6921,10 +6921,10 @@ xtab-filter
 .cd-tab-filter a {
   display: block;
   /* set same size of the .cd-tab-filter */
-  height: 50px;
-  width: 140px;
-  line-height: 50px;
-  padding-left: 14px;
+  /*height: 50px;*/
+  /*width: 140px;*/
+  /*line-height: 50px;*/
+  /*padding-left: 14px;*/
 }
 .cd-tab-filter a.selected {
   background: #41307c;
@@ -6983,10 +6983,10 @@ xtab-filter
     color: #41307c;
   }
   .cd-tab-filter a.selected {
+    color: #4bcaff !important;
     background: transparent;
-    color: #41307c;
-    /* create border bottom using box-shadow property */
-    box-shadow: inset 0 -2px 0 #41307c;
+    outline: 1px solid #4bcaff;
+    text-decoration: none;
   }
   .cd-tab-filter.is-open ul li {
     display: inline-block;
@@ -7014,7 +7014,7 @@ xgallery
 
 -------------------------------- */
 .cd-gallery {
-  padding: 26px 5%;
+  /*padding: 26px 5%;*/
   width: 100%;
 }
 .cd-gallery li {
@@ -7038,7 +7038,7 @@ xgallery
 }
 @media only screen and (min-width: 768px) {
   .cd-gallery {
-    padding: 40px 3%;
+    /*padding: 40px 3%;*/
   }
   .cd-gallery ul {
     text-align: justify;
@@ -7055,7 +7055,7 @@ xgallery
 }
 @media only screen and (min-width: 1170px) {
   .cd-gallery {
-    padding: 50px 2%;
+    /*padding: 50px 2%;*/
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
@@ -7167,7 +7167,7 @@ xfilter
   text-indent: 100%;
   color: transparent;
   white-space: nowrap;
-  background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
+  background: transparent url("images/cd-icon-filter.svg") no-repeat center center;
   z-index: 3;
 }
 .cd-filter-trigger.filter-is-visible {
@@ -7230,7 +7230,7 @@ xcustom form elements
   top: 50%;
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  background: url("/images/cd-icon-arrow.svg") no-repeat center center;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -7304,7 +7304,7 @@ xcustom form elements
   display: block;
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  background: url("/images/cd-icon-arrow.svg") no-repeat center center;
   pointer-events: none;
 }
 .cd-filter-block select {
@@ -7370,7 +7370,7 @@ xcustom form elements
   /* check mark style for check boxes */
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-check.svg") no-repeat center center;
+  background: url("/images/cd-icon-check.svg") no-repeat center center;
 }
 .cd-filter-block .radio-label::before,
 .cd-filter-block .radio-label::after {
@@ -7403,6 +7403,20 @@ xcustom form elements
 body {
   font-family: Arial;
   font-size: 14px; }
+
+.button {
+  padding: 10px 25px;
+  text-transform: uppercase; }
+  .button:hover {
+    text-decoration: none; }
+
+.button--white {
+  color: white;
+  border: 1px solid white; }
+  .button--white:hover {
+    color: #515f67;
+    background: white;
+    border: none; }
 
 header {
   width: 100%;
@@ -7440,7 +7454,7 @@ header {
     margin: 0; }
     header nav ul li a {
       color: white;
-      padding: 5px 10px;
+      padding: 10px 15px;
       text-transform: uppercase; }
       header nav ul li a:hover {
         color: #4bcaff;
@@ -7492,10 +7506,92 @@ header {
   text-align: justify; }
 
 .Portfolio {
-  padding: 80px 0px; }
+  padding: 80px 0px;
+  background: white; }
+  .Portfolio .cd-gallery ul {
+    padding-left: 0; }
+    .Portfolio .cd-gallery ul li {
+      position: relative; }
+      .Portfolio .cd-gallery ul li a:hover::before {
+        content: "+";
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 72px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        background: rgba(53, 63, 71, 0.9); }
+
+.Portfolio__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 90px; }
 
 .Portfolio__title {
   color: #515f67;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.cd-tab-filter-wrapper {
+  background: none;
+  box-shadow: none; }
+
+.Portfolio__filters .cd-filters {
+  margin: 0;
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .Portfolio__filters .cd-filters a {
+    color: #515f67;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 15px;
+    text-transform: uppercase; }
+    .Portfolio__filters .cd-filters a:hover {
+      color: #4bcaff;
+      font-size: 14px;
+      text-decoration: none;
+      outline: 1px solid #4bcaff; }
+
+.DefaultSection {
+  padding: 80px 0px;
+  background: #515f67; }
+  .DefaultSection p {
+    width: 90%;
+    color: white;
+    margin-bottom: 20px; }
+
+.DefaultSection__title {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase; }
+
+.DefaultSection__action {
+  margin-top: 30px; }
+
+footer {
+  background: #4bcaff;
+  padding: 80px 0px; }
+  footer p {
+    color: white;
+    font-size: 28px; }
+
+.Footer__title {
+  color: white;
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 50px;

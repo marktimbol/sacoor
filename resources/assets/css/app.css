@@ -2,6 +2,20 @@ body {
   font-family: Arial;
   font-size: 14px; }
 
+.button {
+  padding: 10px 25px;
+  text-transform: uppercase; }
+  .button:hover {
+    text-decoration: none; }
+
+.button--white {
+  color: white;
+  border: 1px solid white; }
+  .button--white:hover {
+    color: #515f67;
+    background: white;
+    border: none; }
+
 header {
   width: 100%;
   height: 150px;
@@ -38,7 +52,7 @@ header {
     margin: 0; }
     header nav ul li a {
       color: white;
-      padding: 5px 10px;
+      padding: 10px 15px;
       text-transform: uppercase; }
       header nav ul li a:hover {
         color: #4bcaff;
@@ -90,10 +104,92 @@ header {
   text-align: justify; }
 
 .Portfolio {
-  padding: 80px 0px; }
+  padding: 80px 0px;
+  background: white; }
+  .Portfolio .cd-gallery ul {
+    padding-left: 0; }
+    .Portfolio .cd-gallery ul li {
+      position: relative; }
+      .Portfolio .cd-gallery ul li a:hover::before {
+        content: "+";
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 72px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        background: rgba(53, 63, 71, 0.9); }
+
+.Portfolio__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 90px; }
 
 .Portfolio__title {
   color: #515f67;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.cd-tab-filter-wrapper {
+  background: none;
+  box-shadow: none; }
+
+.Portfolio__filters .cd-filters {
+  margin: 0;
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .Portfolio__filters .cd-filters a {
+    color: #515f67;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 15px;
+    text-transform: uppercase; }
+    .Portfolio__filters .cd-filters a:hover {
+      color: #4bcaff;
+      font-size: 14px;
+      text-decoration: none;
+      outline: 1px solid #4bcaff; }
+
+.DefaultSection {
+  padding: 80px 0px;
+  background: #515f67; }
+  .DefaultSection p {
+    width: 90%;
+    color: white;
+    margin-bottom: 20px; }
+
+.DefaultSection__title {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase; }
+
+.DefaultSection__action {
+  margin-top: 30px; }
+
+footer {
+  background: #4bcaff;
+  padding: 80px 0px; }
+  footer p {
+    color: white;
+    font-size: 28px; }
+
+.Footer__title {
+  color: white;
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 50px;
