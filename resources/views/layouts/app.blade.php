@@ -39,9 +39,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="Slide__quote">
-                                &ldquo;I'm looking for the unexpected. I'm looking for the things I've never seen before.&rdquo;
-                            </h3>
+                            <div class="Slide__quotes">
+                                <p class="Slide__quote">
+                                    I'm looking for the unexpected.
+                                </p>
+                                <p class="Slide__quote">
+                                    I'm looking for the things I've never seen before.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,17 @@ const bowersPath = '../../../bower_components';
  */
 
 elixir(function(mix) {
+    mix.sass('admin.scss', 'resources/assets/css/admin.css')
+        .styles([
+            bowersPath + '/bootstrap/dist/css/bootstrap.css',
+            'admin.css'
+        ], 'public/css/admin.css')
+
+        .scripts([
+            bowersPath + '/jquery/dist/jquery.js',
+            bowersPath + '/bootstrap/dist/js/bootstrap.js',
+        ], 'public/js/admin.js');
+
     mix.sass('app.scss', 'resources/assets/css/app.css')
     	.styles([
     		bowersPath + '/bootstrap/dist/css/bootstrap.css',
@@ -31,6 +42,8 @@ elixir(function(mix) {
 
     	.version([
     		'public/css/app.css',
-    		'public/js/app.js'
+    		'public/js/app.js',
+            'public/css/admin.css',
+            'public/js/admin.js'
     	]);
 });
