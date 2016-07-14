@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Quote;
+use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
-    	return view('pages.home');
+    	$quotes = Quote::latest()->get();
+    	return view('pages.home', compact('quotes'));
     }
 }

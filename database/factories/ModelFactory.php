@@ -22,6 +22,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Quote::class, function (Faker\Generator $faker) {
     return [
-        'title' => $faker->sentence,
+        'title' => $faker->text(100),
     ];
 });

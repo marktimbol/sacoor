@@ -20,5 +20,6 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function() {
+	Route::get('/', 'DashboardController@index');
 	Route::resource('quotes', 'QuotesController');
 });

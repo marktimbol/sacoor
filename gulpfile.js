@@ -21,7 +21,15 @@ elixir(function(mix) {
         .scripts([
             bowersPath + '/jquery/dist/jquery.js',
             bowersPath + '/bootstrap/dist/js/bootstrap.js',
-        ], 'public/js/admin.js');
+        ], 'public/js/admin.js')
+
+        .styles([
+            bowersPath + '/sweetalert/dist/sweetalert.css',
+        ], 'public/css/flash.css')
+
+        .scripts([
+            bowersPath + '/sweetalert/dist/sweetalert-dev.js'
+        ], 'public/js/flash.js')
 
     mix.sass('app.scss', 'resources/assets/css/app.css')
     	.styles([
@@ -34,9 +42,27 @@ elixir(function(mix) {
     		'modernizr.js',
             bowersPath + '/jquery/dist/jquery.js',
     		bowersPath + '/bootstrap/dist/js/bootstrap.js',
+    	], 'public/js/app.js')
+
+        .styles([
+            bowersPath + '/owlcarousel/owl-carousel/owl.carousel.css',
+            bowersPath + '/owlcarousel/owl-carousel/owl.theme.css',
+            bowersPath + '/owlcarousel/owl-carousel/owl.transitions.css',
+        ], 'public/css/carousel.css')
+
+        .scripts([
+            bowersPath + '/owlcarousel/owl-carousel/owl.carousel.js',
+            'carousel.js'
+        ], 'public/js/carousel.js')
+
+        .styles([
+            'filter.css',
+        ], 'public/css/filter.css')
+
+        .scripts([
             'jquery.mixitup.min.js',
             'filter.js',
-    	], 'public/js/app.js')
+        ], 'public/js/filter.js')
 
     	.copy('bower_components/bootstrap/dist/fonts', 'public/build/fonts')
 
@@ -44,6 +70,12 @@ elixir(function(mix) {
     		'public/css/app.css',
     		'public/js/app.js',
             'public/css/admin.css',
-            'public/js/admin.js'
+            'public/js/admin.js',
+            'public/css/carousel.css',
+            'public/js/carousel.js',
+            'public/css/filter.css',
+            'public/js/filter.js',
+            'public/css/flash.css',
+            'public/js/flash.js'
     	]);
 });

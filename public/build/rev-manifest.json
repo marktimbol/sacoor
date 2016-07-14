@@ -1,6 +1,12 @@
 {
-  "css/admin.css": "css/admin-661f349b00.css",
-  "css/app.css": "css/app-8db92e8166.css",
+  "css/admin.css": "css/admin-8e54aae6ba.css",
+  "css/app.css": "css/app-fe80fe2bc0.css",
+  "css/carousel.css": "css/carousel-584e67508c.css",
+  "css/filter.css": "css/filter-e66e6f17ea.css",
+  "css/flash.css": "css/flash-d83c6024da.css",
   "js/admin.js": "js/admin-ad96f270aa.js",
-  "js/app.js": "js/app-b15b43e7c9.js"
+  "js/app.js": "js/app-7db7528933.js",
+  "js/carousel.js": "js/carousel-22ae011fef.js",
+  "js/filter.js": "js/filter-cba335303d.js",
+  "js/flash.js": "js/flash-10686e1e5c.js"
 }

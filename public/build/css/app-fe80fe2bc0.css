@@ -7437,9 +7437,10 @@ header {
     -ms-flex-pack: center;
     justify-content: center; }
   header .logo {
-    margin: 0;
     color: white;
     font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
     text-transform: uppercase; }
     header .logo span {
@@ -7456,6 +7457,9 @@ header {
       color: white;
       padding: 10px 15px;
       text-transform: uppercase; }
+      header nav ul li a:focus, header nav ul li a:visited {
+        color: white;
+        text-decoration: none; }
       header nav ul li a:hover {
         color: #4bcaff;
         font-size: 14px;
@@ -7463,12 +7467,7 @@ header {
         outline: 1px solid #4bcaff; }
 
 .Slides .Slide__quotes {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center; }
+  margin-top: 150px; }
 
 .Slides .Slide__quote {
   margin: 5px 0px;
@@ -7479,6 +7478,20 @@ header {
   text-align: center;
   text-transform: uppercase;
   background: rgba(57, 68, 75, 0.85); }
+  .Slides .Slide__quote:before {
+    content: "\201C"; }
+  .Slides .Slide__quote:last-child:before {
+    content: ""; }
+  .Slides .Slide__quote:last-child:after {
+    content: "\201D"; }
+
+.owl-wrapper-outer .item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .Slides__slide {
   height: 800px;
@@ -7597,6 +7610,11 @@ footer {
   footer p {
     color: white;
     font-size: 28px; }
+    footer p a {
+      color: white; }
+      footer p a:hover {
+        color: #515f67;
+        text-decoration: none; }
 
 .Footer__title {
   color: white;
@@ -7604,6 +7622,26 @@ footer {
   font-weight: normal;
   margin-bottom: 50px;
   text-transform: uppercase; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  header {
+    height: 70px; }
+  .Services__service {
+    text-align: center;
+    margin-bottom: 40px; }
+    .Services__service img {
+      margin: 0 auto; }
+  .Services__service--description {
+    text-align: center; }
+  .Portfolio__filters .cd-filters {
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+/* Medium and up */
+/* Medium only */
+/* Large and up */
+/* Large only */
 
 /*# sourceMappingURL=app.css.map */
 

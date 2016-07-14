@@ -6759,6 +6759,9 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+.Dashboard .pageTitle {
+  margin-top: 0;
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=admin.css.map */
 

@@ -10,16 +10,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
+        <link href="{{ elixir('css/carousel.css') }}" rel="stylesheet">
+        <link href="{{ elixir('css/filter.css') }}" rel="stylesheet">
         <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12">
                         <h1 class="logo">blu<span>e</span>asy</h1>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12 hidden-xs">
                         <nav>
                             <ul>
                                 <li><a href="#">Home</a></li>
@@ -40,12 +42,18 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="Slide__quotes">
-                                <p class="Slide__quote">
-                                    I'm looking for the unexpected.
-                                </p>
-                                <p class="Slide__quote">
-                                    I'm looking for the things I've never seen before.
-                                </p>
+                                <div id="quotes" class="owl-carousel owl-theme">
+                                    @foreach( $quotes as $quote )
+                                    <?php $paragraphs =  explode('.', $quote->title); ?>
+                                    <div class="item">
+                                        <?php for($i = 0; $i < count($paragraphs) - 1; $i++ ) { ?>
+                                            <p class="Slide__quote">
+                                                {{ $paragraphs[$i] }}.
+                                            </p>
+                                        <?php } ?>
+                                    </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,7 +67,7 @@
                     <div class="col-md-12">
                         <h3 class="Services__title">Services</h3>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <figure class="Services__service">
                             <figcaption>
                                 <img src="/images/icon-coffee.png" alt="Coffee" title="Coffee" class="img-responsive" />
@@ -71,7 +79,7 @@
                         </figure>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <figure class="Services__service">
                             <figcaption>
                                 <img src="/images/icon-instant.png" alt="Instant" title="Instant" class="img-responsive" />
@@ -83,7 +91,7 @@
                         </figure>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <figure class="Services__service">
                             <figcaption>
                                 <img src="/images/icon-serious.png" alt="Serious" title="Serious" class="img-responsive" />
@@ -95,7 +103,7 @@
                         </figure>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <figure class="Services__service">
                             <figcaption>
                                 <img src="/images/icon-frame.png" alt="Frame" title="Frame" class="img-responsive" />
@@ -230,7 +238,7 @@
                     <div class="col-md-12">
                         <h3 class="Footer__title">Twitter</h3>
                         <p>
-                            Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake @cheesecake tootsie roll.
+                            Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a href="https://twitter.com/@cheesecake" target="_blank">@cheesecake</a> tootsie roll.
                         </p>
                     </div>
                 </div>
@@ -240,5 +248,7 @@
         @yield('content')
 
         <script src="{{ elixir('js/app.js') }}"></script>
+        <script src="{{ elixir('js/carousel.js') }}"></script>
+        <script src="{{ elixir('js/filter.js') }}"></script>
     </body>
 </html>
