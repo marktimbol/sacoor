@@ -140,42 +140,82 @@
 	                        <ul>
 	                            <li class="mix panoramas">
 	                                <a href="#">
-	                                    <img src="/images/image_01.jpg" alt="Image 1">
+	                                    <img src="/images/image_01.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix portraits">
 	                                <a href="#">
-	                                   <img src="/images/image_02.jpg" alt="Image 1">
+	                                    <img src="/images/image_02.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix macro">
 	                                <a href="#">
-	                                    <img src="/images/image_03.jpg" alt="Image 1">
+	                                    <img src="/images/image_03.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix panoramas">
 	                                <a href="#">
-	                                    <img src="/images/image_04.jpg" alt="Image 1">
+	                                    <img src="/images/image_04.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix journal">
 	                                <a href="#">
-	                                    <img src="/images/image_05.jpg" alt="Image 1">
+	                                    <img src="/images/image_05.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix portraits">
 	                                <a href="#">
-	                                    <img src="/images/image_06.jpg" alt="Image 1">
+	                                    <img src="/images/image_06.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix portraits">
 	                                <a href="#">
-	                                    <img src="/images/image_07.jpg" alt="Image 1">
+	                                    <img src="/images/image_07.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 	                            <li class="mix panoramas">
 	                                <a href="#">
-	                                    <img src="/images/image_08.jpg" alt="Image 1">
+	                                    <img src="/images/image_08.jpg" 
+	                                    	alt="Image" 
+	                                    	title="Image" 
+	                                    	class="image-responsive" 
+	                                    	width="269" 
+	                                    	height="270" />
 	                                </a>
 	                            </li>
 
