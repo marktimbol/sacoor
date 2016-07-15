@@ -52,7 +52,12 @@
 	            <div class="col-md-3 col-sm-6 col-xs-12">
 	                <figure class="Services__service">
 	                    <figcaption>
-	                        <img src="/images/icon-coffee.png" alt="Coffee" title="Coffee" class="img-responsive" />
+	                        <img src="/images/icon-coffee.png" 
+	                        	alt="Coffee" 
+	                        	title="Coffee" 
+	                        	width="34"
+	                        	height="48"
+	                        	class="img-responsive" />
 	                        <h4 class="Services__service--title">Coffee</h4>
 	                        <p class="Services__service--description">
 	                            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
@@ -64,7 +69,12 @@
 	            <div class="col-md-3 col-sm-6 col-xs-12">
 	                <figure class="Services__service">
 	                    <figcaption>
-	                        <img src="/images/icon-instant.png" alt="Instant" title="Instant" class="img-responsive" />
+	                        <img src="/images/icon-instant.png" 
+	                        	alt="Instant" 
+	                        	title="Instant" 
+	                        	width="48"
+	                        	height="49" 
+	                        	class="img-responsive" />
 	                        <h4 class="Services__service--title">Instant</h4>
 	                        <p class="Services__service--description">
 	                            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
@@ -76,7 +86,12 @@
 	            <div class="col-md-3 col-sm-6 col-xs-12">
 	                <figure class="Services__service">
 	                    <figcaption>
-	                        <img src="/images/icon-serious.png" alt="Serious" title="Serious" class="img-responsive" />
+	                        <img src="/images/icon-serious.png" 
+	                        	alt="Serious" 
+	                        	title="Serious" 
+	                        	width="47"
+	                        	height="45" 
+	                        	class="img-responsive" />
 	                        <h4 class="Services__service--title">Serious</h4>
 	                        <p class="Services__service--description">
 	                            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
@@ -88,7 +103,12 @@
 	            <div class="col-md-3 col-sm-6 col-xs-12">
 	                <figure class="Services__service">
 	                    <figcaption>
-	                        <img src="/images/icon-frame.png" alt="Frame" title="Frame" class="img-responsive" />
+	                        <img src="/images/icon-frame.png" 
+	                        	alt="Frame" 
+	                        	title="Frame" 
+	                        	width="48"
+	                        	height="48" 
+	                        	class="img-responsive" />
 	                        <h4 class="Services__service--title">Frame</h4>
 	                        <p class="Services__service--description">
 	                            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
