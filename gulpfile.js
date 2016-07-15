@@ -34,14 +34,17 @@ elixir(function(mix) {
     mix.sass('app.scss', 'resources/assets/css/app.css')
     	.styles([
     		bowersPath + '/bootstrap/dist/css/bootstrap.css',
-            'filter.css',
+            // 'filter.css',
+            'mobile.nav.css',
     		'app.css'
     	], 'public/css/app.css')
 
     	.scripts([
-    		'modernizr.js',
+    		'modernizr.custom.js',
             bowersPath + '/jquery/dist/jquery.js',
     		bowersPath + '/bootstrap/dist/js/bootstrap.js',
+            'classie.js',
+            'mobile.nav.js',
     	], 'public/js/app.js')
 
         .styles([

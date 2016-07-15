@@ -1,0 +1,17 @@
+.button {
+	padding: 10px 25px;
+	text-transform: uppercase;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.button--white {
+	color: white;
+	border: 1px solid white;
+	&:hover {
+		color: #515f67;
+		background: white;
+		border: none;
+	}
+}

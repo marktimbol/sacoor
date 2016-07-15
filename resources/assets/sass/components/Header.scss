@@ -1,0 +1,53 @@
+header {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	z-index: 9;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background: rgba(57,68,75,.85);
+	.row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		color: white;
+		font-size: 30px;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-weight: normal;
+		text-transform: uppercase;
+		span {
+			color: $skyBlue;
+		}
+	}
+
+	nav {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+			li {
+				a {
+					color: white;
+					padding: 10px 15px;
+					text-transform: uppercase;
+					&:focus, &:visited {
+						color: white;
+						text-decoration: none;
+					}
+					&:hover {
+						color: $skyBlue;
+						text-decoration: none;
+						outline: 1px solid $skyBlue;
+					}
+				}
+			}
+		}
+	}
+}

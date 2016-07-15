@@ -2,6 +2,12 @@ body {
   font-family: Arial;
   font-size: 14px; }
 
+.SectionTitle {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
 .button {
   padding: 10px 25px;
   text-transform: uppercase; }
@@ -21,6 +27,7 @@ header {
   height: 150px;
   display: -ms-flexbox;
   display: flex;
+  z-index: 9;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -60,7 +67,6 @@ header {
         text-decoration: none; }
       header nav ul li a:hover {
         color: #4bcaff;
-        font-size: 14px;
         text-decoration: none;
         outline: 1px solid #4bcaff; }
 
@@ -76,12 +82,9 @@ header {
   text-align: center;
   text-transform: uppercase;
   background: rgba(57, 68, 75, 0.85); }
-  .Slides .Slide__quote:before {
-    content: "\201C"; }
-  .Slides .Slide__quote:last-child:before {
-    content: ""; }
-  .Slides .Slide__quote:last-child:after {
-    content: "\201D"; }
+  .Slides .Slide__quote a {
+    color: white;
+    text-decoration: underline; }
 
 .owl-wrapper-outer .item {
   display: -ms-flexbox;
@@ -107,10 +110,7 @@ header {
 
 .Services__title {
   color: white;
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 50px;
-  text-transform: uppercase; }
+  margin-bottom: 50px; }
 
 .Services__service--title {
   color: white;
@@ -157,13 +157,7 @@ header {
 
 .Portfolio__title {
   color: #515f67;
-  font-size: 30px;
-  font-weight: normal;
-  text-transform: uppercase; }
-
-.cd-tab-filter-wrapper {
-  background: none;
-  box-shadow: none; }
+  margin-bottom: 30px; }
 
 .Portfolio__filters .cd-filters {
   margin: 0;
@@ -194,10 +188,7 @@ header {
 
 .DefaultSection__title {
   color: white;
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  text-transform: uppercase; }
+  margin-bottom: 30px; }
 
 .DefaultSection__action {
   margin-top: 30px; }
@@ -221,10 +212,41 @@ footer {
   margin-bottom: 50px;
   text-transform: uppercase; }
 
+.Video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .Video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.cd-tab-filter-wrapper {
+  background: none;
+  box-shadow: none; }
+
+#trigger-overlay {
+  background: none;
+  border: none;
+  cursor: pointer; }
+  #trigger-overlay .fa {
+    color: white; }
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   header {
     height: 70px; }
+  .Slides .Slides__slide {
+    height: 500px;
+    display: block; }
+    .Slides .Slides__slide .item {
+      display: block; }
+  .Slides .Slide__quote {
+    font-size: 30px; }
   .Services__service {
     text-align: center;
     margin-bottom: 40px; }
@@ -233,8 +255,14 @@ footer {
   .Services__service--description {
     text-align: center; }
   .Portfolio__filters .cd-filters {
+    width: 100%;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .Portfolio__header {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .cd-tab-filter {
+    margin-top: -15px; } }
 
 /* Medium and up */
 /* Medium only */

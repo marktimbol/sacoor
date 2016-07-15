@@ -1,0 +1,23 @@
+footer {
+	background: #4bcaff;
+	padding: 80px 0px;
+	p {
+		color: white;
+		font-size: 28px;
+		a {
+			color: white;
+			&:hover {
+				color: #515f67;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.Footer__title {
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
