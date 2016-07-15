@@ -142,7 +142,7 @@
 	                                <a href="#">
 	                                    <img src="/images/image_01.jpg" 
 	                                    	alt="Image" 
-	                                    	title="Image" 
+	                                    	title="Image"
 	                                    	class="image-responsive" 
 	                                    	width="269" 
 	                                    	height="270" />
