@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    /**
+     * Displays all the latest quotes
+     */
     public function index()
     {
     	$quotes = Quote::latest()->get();

@@ -11,14 +11,22 @@
 |
 */
 
+/**
+ * Public pages
+ */
 Route::get('/', [
 	'as' => 'home', 
 	'uses' => 'PagesController@home'
 ]);
 
+/**
+ * Routes for authentication
+ */
 Route::auth();
-Route::get('/home', 'HomeController@index');
 
+/**
+ * Dashboard
+ */
 Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function() {
 	Route::get('/', 'DashboardController@index');
 	Route::resource('quotes', 'QuotesController');
