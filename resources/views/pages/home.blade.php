@@ -118,17 +118,17 @@
 	                                    <li class="filter">
 	                                        <a class="selected" href="#0" data-type="all">All</a>
 	                                    </li>
-	                                    <li class="filter" data-filter=".color-1">
-	                                        <a href="#0" data-type="color-1">Panoramas</a>
+	                                    <li class="filter" data-filter=".panoramas">
+	                                        <a href="#0" data-type="panoramas">Panoramas</a>
 	                                    </li>
-	                                    <li class="filter" data-filter=".color-2">
-	                                        <a href="#0" data-type="color-2">Portraits</a>
+	                                    <li class="filter" data-filter=".portraits">
+	                                        <a href="#0" data-type="portraits">Portraits</a>
 	                                    </li>
-	                                    <li class="filter" data-filter=".color-3">
-	                                        <a href="#0" data-type="color-3">Macro</a>
+	                                    <li class="filter" data-filter=".macro">
+	                                        <a href="#0" data-type="macro">Macro</a>
 	                                    </li>
-	                                    <li class="filter" data-filter=".color-4">
-	                                        <a href="#0" data-type="color-4">Journal</a>
+	                                    <li class="filter" data-filter=".journal">
+	                                        <a href="#0" data-type="journal">Journal</a>
 	                                    </li>
 	                                </ul>
 	                            </div>
@@ -138,42 +138,42 @@
 	                <div class="col-md-12">
 	                    <section class="cd-gallery">
 	                        <ul>
-	                            <li class="mix color-1">
+	                            <li class="mix panoramas">
 	                                <a href="#">
 	                                    <img src="/images/image_01.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-2">
+	                            <li class="mix portraits">
 	                                <a href="#">
 	                                   <img src="/images/image_02.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-3">
+	                            <li class="mix macro">
 	                                <a href="#">
 	                                    <img src="/images/image_03.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-1">
+	                            <li class="mix panoramas">
 	                                <a href="#">
 	                                    <img src="/images/image_04.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-4">
+	                            <li class="mix journal">
 	                                <a href="#">
 	                                    <img src="/images/image_05.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-2">
+	                            <li class="mix portraits">
 	                                <a href="#">
 	                                    <img src="/images/image_06.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-2">
+	                            <li class="mix portraits">
 	                                <a href="#">
 	                                    <img src="/images/image_07.jpg" alt="Image 1">
 	                                </a>
 	                            </li>
-	                            <li class="mix color-1">
+	                            <li class="mix panoramas">
 	                                <a href="#">
 	                                    <img src="/images/image_08.jpg" alt="Image 1">
 	                                </a>
