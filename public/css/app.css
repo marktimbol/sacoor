@@ -7109,7 +7109,8 @@ footer {
   .Portfolio__filters .cd-filters {
     width: 100%;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: -30px; }
   .Portfolio__header {
     -ms-flex-direction: row;
     flex-direction: row; }
